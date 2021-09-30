@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Calculo de numeros</title>
+	<title>Resultado de la suma</title>
 </head>
 <body>
 	
@@ -10,8 +10,8 @@
 	<?php
 
 
-		echo "<h1>Calculo de numeros</h1> <br><br>";
-		//Recogemos las variables introducidas y confirmamos que son numeros
+		echo "<h1>Resultado de la suma</h1> <br><br>";
+		
 
 		if(isset($_GET["numero1"],$_GET["numero2"])) {
 
@@ -24,13 +24,10 @@
 
 			}else{
 
-				echo "Uno de los valores no es un numero. No se ha realizado la operacion";
+				echo "Hay un valor no numerico, volver a introducir datos";
 
 		}
 
-		}else{
-
-			echo "ERROR: No se han introducidos dos valores";
 		}
 
 
